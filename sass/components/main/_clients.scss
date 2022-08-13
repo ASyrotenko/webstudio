@@ -1,0 +1,38 @@
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients__list {
+  // display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-primary-color);
+  border-radius: 4px;
+
+  color: var(--social-primary-color);
+
+  transition: color var(--main-duration) var(--main-timing-function),
+    border-color var(--main-duration) var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+    border-color: var(--accent-primary-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

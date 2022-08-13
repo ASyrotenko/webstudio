@@ -1,0 +1,57 @@
+.banner {
+  padding: 118px 10px;
+  background-color: var(--bg-banner-color);
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/banner.jpg);
+
+  margin: 0 auto;
+  max-width: 1600px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 10px;
+  }
+}
+
+.banner__title {
+  margin: 0 auto;
+  max-width: 360px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+}
+
+.banner__btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 32px;
+
+  border: 1px solid var(--btn-border-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-primary-color);
+  color: var(--text-white-color);
+  font-family: inherit;
+
+  transition: background-color var(--main-duration) var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-secondary-color);
+  }
+}

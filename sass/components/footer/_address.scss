@@ -1,0 +1,20 @@
+.footer-address__list {
+  margin-top: 20px;
+}
+
+.footer-address__link--map {
+  color: var(--text-white-color);
+  font-style: normal;
+}
+
+.footer-address__link--contacts {
+  color: var(--text-transpwhite-color);
+  font-style: normal;
+
+  transition: color var(--main-duration) var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+  }
+}
