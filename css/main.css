@@ -274,15 +274,25 @@ img {
 
 .contacts-list__icon {
   fill: currentColor;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .contacts-list__icon {
     margin-right: 8px;
   }
+  .contacts-list__icon.contacts-list__icon--envelope-tablet, .contacts-list__icon.contacts-list__icon--smartphone-tablet {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-list__icon {
     margin-right: 10px;
+  }
+  .contacts-list__icon.contacts-list__icon--envelope-tablet, .contacts-list__icon.contacts-list__icon--smartphone-tablet {
+    display: none;
+  }
+  .contacts-list__icon.contacts-list__icon--envelope-desktop, .contacts-list__icon.contacts-list__icon--smartphone-desktop {
+    display: block;
   }
 }
 
