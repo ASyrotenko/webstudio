@@ -111,11 +111,18 @@ img {
 }
 
 .logo {
-  font-family: raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-family: raleway, sans-serif;
   color: var(--accent-primary-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__header {
@@ -742,8 +749,21 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-address {
+  text-align: center;
+}
+
 .footer-address__list {
   margin-top: 20px;
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address__link--map {
@@ -762,8 +782,15 @@ img {
 }
 
 .footer-social {
-  padding-top: 12px;
-  margin-left: 70px;
+  margin-top: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    padding-top: 12px;
+    margin-left: 70px;
+    margin-top: 0;
+  }
 }
 
 .footer-social__title {
@@ -778,6 +805,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -809,24 +839,15 @@ img {
 }
 
 .footer-form {
-  margin-left: auto;
+  margin-top: 60px;
 }
 
 .footer-form__content {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   padding-top: 12px;
 }
 
 .footer-form__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
 }
 
 .footer-form__name {
@@ -840,7 +861,7 @@ img {
   margin-top: 20px;
   padding-left: 16px;
   height: 50px;
-  max-width: 358px;
+  width: 100%;
   outline-color: transparent;
   border-color: var(--form-border-color);
   border-radius: 4px;
@@ -870,7 +891,7 @@ img {
 }
 
 .footer-form__btn {
-  margin-left: 12px;
+  margin: 20px auto 0 auto;
   width: 200px;
   height: 50px;
   display: -webkit-box;
@@ -899,8 +920,13 @@ img {
 }
 
 .footer-form__icon {
-  margin-left: 10px;
+  margin-left: 12px;
   fill: var(--text-white-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-form__icon {
+    margin-left: 10px;
+  }
 }
 
 .backdrop {

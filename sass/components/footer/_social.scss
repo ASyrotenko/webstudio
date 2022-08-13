@@ -1,6 +1,12 @@
 .footer-social {
-  padding-top: 12px;
-  margin-left: 70px;
+  margin-top: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    margin-left: 70px;
+    margin-top: 0;
+  }
 }
 
 .footer-social__title {
@@ -13,6 +19,7 @@
 
 .footer-social__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
