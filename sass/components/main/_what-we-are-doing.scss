@@ -1,5 +1,10 @@
 .doing {
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .doing__title {
@@ -9,17 +14,13 @@
 }
 
 .doing__list {
-  // display: flex;
+  display: flex;
+  gap: 30px;
   margin-top: 50px;
 }
 
 .doing__item {
-  line-height: 0;
   position: relative;
-
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
 }
 
 .doing__text {
@@ -33,8 +34,6 @@
 
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
