@@ -2,10 +2,14 @@
   margin-top: 60px;
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 5px;
+  }
+
   @media screen and (min-width: 1200px) {
-    padding-top: 12px;
     margin-left: 70px;
-    margin-top: 0;
+    margin-top: 12px;
   }
 }
 
