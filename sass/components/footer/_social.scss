@@ -1,16 +1,16 @@
 .footer-social {
-  margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     //     margin-left: 165px;
-    margin-top: 5px;
+    padding-top: 5px;
   }
 
-  //   @media screen and (min-width: 1200px) {
-  //     margin-left: 70px;
-  //     margin-top: 12px;
-  //   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
 .footer-social__title {
