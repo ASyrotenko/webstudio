@@ -1,10 +1,13 @@
 .header {
   border-bottom: 1px solid var(--border-main-color);
+  position: relative;
 }
 
 .header-container {
+  display: flex;
+  justify-content: space-between;
+
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
   }
 }

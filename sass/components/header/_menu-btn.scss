@@ -1,0 +1,43 @@
+.header__menu {
+  display: flex;
+}
+
+.menu-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  z-index: 999;
+}
+
+.menu-btn__icon-close {
+  display: none;
+
+  .menu-btn.is-open & {
+    display: block;
+  }
+}
+
+.menu-btn__icon-open {
+  .menu-btn.is-open & {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 48px 40px;
+
+  background-color: var(--bg-white-color);
+
+  &.is-open {
+    display: block;
+  }
+}
