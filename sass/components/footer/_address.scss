@@ -1,13 +1,13 @@
 .footer-address {
   text-align: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    margin-left: 61px;
-  }
+  //   @media screen and (min-width: 768px) and (max-width: 1200px) {
+  //     margin-left: 61px;
+  //   }
 
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     text-align: left;
+  //   }
 }
 
 .footer-address__list {
@@ -17,9 +17,9 @@
 .footer-address__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     margin-bottom: 9px;
+  //   }
 }
 
 .footer-address__link--map {
