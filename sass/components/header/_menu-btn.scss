@@ -1,6 +1,10 @@
 .header__menu {
   display: flex;
   z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
 }
 
 .menu-btn {
@@ -11,6 +15,10 @@
   padding: 0;
   border: none;
   z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-btn__icon-close {
@@ -19,50 +27,45 @@
   .menu-btn.is-open & {
     display: block;
   }
-
-  // transition: fill var(--main-duration) var(--main-timing-function);
-
-  // .menu-btn:hover & {
-  //   fill: var(--accent-primary-color);
-  // }
 }
 
 .menu-btn__icon-open {
   .menu-btn.is-open & {
     display: none;
   }
-
-  // transition: fill var(--main-duration) var(--main-timing-function);
-
-  // .menu-btn:hover & {
-  //   fill: var(--accent-primary-color);
-  // }
 }
 
 .menu-container {
   display: flex;
-  flex-direction: column;
-  transform: translateY(-100%);
-  visibility: hidden;
-  opacity: 0;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 95vh;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    transform: translateY(-100%);
+    visibility: hidden;
+    opacity: 0;
 
-  padding: 48px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
 
-  background-color: var(--bg-white-color);
+    padding: 48px 40px;
 
-  transition: transform var(--main-duration) var(--main-timing-function),
-    opacity var(--main-duration) var(--main-timing-function),
-    visibility var(--main-duration) var(--main-timing-function);
+    background-color: var(--bg-white-color);
 
-  &.is-open {
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
+    transition: transform var(--main-duration) var(--main-timing-function),
+      opacity var(--main-duration) var(--main-timing-function),
+      visibility var(--main-duration) var(--main-timing-function);
+
+    &.is-open {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
   }
 }
