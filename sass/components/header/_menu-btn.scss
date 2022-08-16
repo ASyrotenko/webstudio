@@ -1,5 +1,6 @@
 .header__menu {
   display: flex;
+  z-index: 1;
 }
 
 .menu-btn {
@@ -9,7 +10,7 @@
   align-items: center;
   padding: 0;
   border: none;
-  z-index: 999;
+  z-index: 2;
 }
 
 .menu-btn__icon-close {
@@ -18,26 +19,50 @@
   .menu-btn.is-open & {
     display: block;
   }
+
+  // transition: fill var(--main-duration) var(--main-timing-function);
+
+  // .menu-btn:hover & {
+  //   fill: var(--accent-primary-color);
+  // }
 }
 
 .menu-btn__icon-open {
   .menu-btn.is-open & {
     display: none;
   }
+
+  // transition: fill var(--main-duration) var(--main-timing-function);
+
+  // .menu-btn:hover & {
+  //   fill: var(--accent-primary-color);
+  // }
 }
 
 .menu-container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 95vh;
 
   padding: 48px 40px;
 
   background-color: var(--bg-white-color);
 
+  transition: transform var(--main-duration) var(--main-timing-function),
+    opacity var(--main-duration) var(--main-timing-function),
+    visibility var(--main-duration) var(--main-timing-function);
+
   &.is-open {
-    display: block;
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
   }
 }
