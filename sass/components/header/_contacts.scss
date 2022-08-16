@@ -12,16 +12,21 @@
   display: flex;
   align-items: center;
 
+  padding: 16px 0;
+
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: inherit;
 
-  transition: color var(--main-duration) var(--main-timing-function);
+  transition: color var(--main-duration) var(--main-timing-function),
+    font-size var(--main-duration) var(--main-timing-function);
 
   &:hover,
   &:focus {
     color: var(--accent-primary-color);
+    font-size: 34px;
   }
 
   @media screen and (min-width: 768px) {
