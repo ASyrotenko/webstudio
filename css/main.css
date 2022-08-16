@@ -370,6 +370,38 @@ img {
   }
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 58px;
+}
+
+.social__link {
+  padding: 6px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-primary-color);
+  -webkit-transition: color var(--main-duration) var(--main-timing-function);
+  transition: color var(--main-duration) var(--main-timing-function);
+}
+.social__item:not(:last-child) .social__link::after {
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 10px;
+}
+.social__link:hover, .social__link:focus {
+  color: var(--accent-secondary-color);
+}
+
 .banner {
   padding: 118px 10px;
   background-color: var(--bg-banner-color);
