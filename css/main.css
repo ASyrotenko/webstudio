@@ -865,6 +865,11 @@ img {
             flex-direction: row;
   }
 }
+@media screen and (min-width: 768px) {
+  .portfolio__projects-list {
+    margin-top: 50px;
+  }
+}
 
 .portfolio__projects-link {
   display: -webkit-box;
@@ -895,6 +900,11 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__projects-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 
 .portfolio__projects-link {
   color: inherit;
@@ -917,8 +927,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
   transition: -webkit-transform var(--main-duration) var(--main-timing-function);
   transition: transform var(--main-duration) var(--main-timing-function);
