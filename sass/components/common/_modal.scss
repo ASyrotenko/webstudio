@@ -47,6 +47,10 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--main-duration) var(--main-timing-function);
   }
+
+  @media screen and (max-height: 660px) {
+    top: 110%;
+  }
 }
 
 .modal__close-btn {

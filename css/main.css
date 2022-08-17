@@ -1246,6 +1246,11 @@ img {
     transition: transform var(--main-duration) var(--main-timing-function), -webkit-transform var(--main-duration) var(--main-timing-function);
   }
 }
+@media screen and (max-height: 660px) {
+  .modal {
+    top: 110%;
+  }
+}
 
 .modal__close-btn {
   position: absolute;
