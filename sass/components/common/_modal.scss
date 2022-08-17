@@ -161,21 +161,10 @@
 /* modal-checkbox */
 
 .modal__form-label--checkbox {
-  @media screen and (max-width: 479px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.modal__form-input--checkbox {
-  width: 15px;
-  height: 16px;
 }
 
 .modal__form-checkbox {
@@ -201,7 +190,15 @@
 
   .modal__form-input--checkbox:focus + & {
     border-color: var(--accent-primary-color);
-    border-width: 3px;
+    @media screen and (min-width: 325px) {
+      border-width: 3px;
+    }
+  }
+
+  @media screen and (max-width: 324px) {
+    width: 12px;
+    height: 11px;
+    border-width: 1px;
   }
 }
 
@@ -212,6 +209,11 @@
   letter-spacing: 0.03em;
   white-space: pre;
   cursor: pointer;
+
+  @media screen and (max-width: 369px) {
+    font-size: 10px;
+    margin-left: 4px;
+  }
 }
 
 .modal__form-agreement-link {
@@ -221,6 +223,10 @@
   text-decoration: underline;
 
   color: var(--accent-primary-color);
+
+  @media screen and (max-width: 462px) {
+    margin-top: 18px;
+  }
 }
 
 .modal__submit-btn {
