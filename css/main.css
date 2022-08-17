@@ -1164,6 +1164,8 @@ img {
   width: 100%;
   height: 100%;
   z-index: 999;
+  padding: 93px 15px;
+  overflow-y: scroll;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity var(--main-duration) var(--main-timing-function), visibility var(--main-duration) var(--main-timing-function);
@@ -1177,20 +1179,10 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
-  transition: -webkit-transform var(--main-duration) var(--main-timing-function);
-  transition: transform var(--main-duration) var(--main-timing-function);
-  transition: transform var(--main-duration) var(--main-timing-function), -webkit-transform var(--main-duration) var(--main-timing-function);
+  position: relative;
   padding: 40px;
-  width: 528px;
-  max-width: 100%;
-  min-height: 581px;
-  max-height: 100%;
+  max-width: 450px;
+  width: 100%;
   background-color: var(--modal-main-bg);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1199,6 +1191,19 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.1);
           transform: translate(-50%, -50%) scale(0.1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
+    transition: -webkit-transform var(--main-duration) var(--main-timing-function);
+    transition: transform var(--main-duration) var(--main-timing-function);
+    transition: transform var(--main-duration) var(--main-timing-function), -webkit-transform var(--main-duration) var(--main-timing-function);
+  }
 }
 
 .modal__close-btn {
@@ -1236,10 +1241,14 @@ img {
 .modal__form-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-title-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__form-title {
+    line-height: 1.15;
+  }
 }
 
 .modal__form-list {
@@ -1338,6 +1347,19 @@ img {
 }
 
 /* modal-checkbox */
+.modal__form-label--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (max-width: 479px) {
   .modal__form-label--checkbox {
     display: -webkit-box;
@@ -1382,16 +1404,17 @@ img {
 }
 
 .modal__form-agreement {
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   white-space: pre;
   cursor: pointer;
 }
 
 .modal__form-agreement-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-primary-color);
