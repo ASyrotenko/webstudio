@@ -39,7 +39,7 @@
     transform: translate(-50%, -50%) scale(0.1);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -161,9 +161,12 @@
 /* modal-checkbox */
 
 .modal__form-label--checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .modal__form-input--checkbox {
