@@ -62,22 +62,44 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 8px;
+    display: block;
 
-    &.contacts-list__icon--envelope-tablet,
-    &.contacts-list__icon--smartphone-tablet {
-      display: block;
+    &.contacts-list__icon--smartphone {
+      width: 10px;
+      height: 14px;
     }
+
+    &.contacts-list__icon--envelope {
+      display: block;
+      width: 14px;
+      height: 10px;
+    }
+
+    // &.contacts-list__icon--envelope-tablet,
+    // &.contacts-list__icon--smartphone-tablet {
+    //   display: block;
+    // }
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
-    &.contacts-list__icon--envelope-tablet,
-    &.contacts-list__icon--smartphone-tablet {
-      display: none;
+
+    &.contacts-list__icon--smartphone {
+      height: 16px;
     }
-    &.contacts-list__icon--envelope-desktop,
-    &.contacts-list__icon--smartphone-desktop {
-      display: block;
+
+    &.contacts-list__icon--envelope {
+      width: 16px;
+      height: 12px;
     }
+
+    // &.contacts-list__icon--envelope-tablet,
+    // &.contacts-list__icon--smartphone-tablet {
+    //   display: none;
+    // }
+    // &.contacts-list__icon--envelope-desktop,
+    // &.contacts-list__icon--smartphone-desktop {
+    //   display: block;
+    // }
   }
 }
