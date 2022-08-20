@@ -1026,6 +1026,21 @@ img {
   line-height: 1.88;
 }
 
+.portfolio__overflow-wrapper img {
+  width: 450px;
+  height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__overflow-wrapper img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__overflow-wrapper img {
+    width: 370px;
+  }
+}
+
 .footer {
   background-color: var(--bg-dark-color);
   padding-top: 60px;
