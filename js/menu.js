@@ -11,3 +11,16 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
+
+(() => {
+  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+
+  menuBtnRef.addEventListener('click', toggleModal);
+  mobileMenuRef.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('modal-open');
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
