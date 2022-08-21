@@ -24,7 +24,10 @@
 
 .modal {
   position: relative;
+  left: 50%;
   padding: 40px;
+  transform: translateX(-50%);
+  transition: transform var(--main-duration) var(--main-timing-function);
 
   max-width: 450px;
   width: 100%;
@@ -39,13 +42,13 @@
     transform: translate(-50%, -50%) scale(0.1);
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
-    left: 50%;
+    // left: 50%;
 
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--main-duration) var(--main-timing-function);
+    // transition: transform var(--main-duration) var(--main-timing-function);
   }
 
   @media screen and (max-height: 660px) {

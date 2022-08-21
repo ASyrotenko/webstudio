@@ -1305,7 +1305,14 @@ img {
 
 .modal {
   position: relative;
+  left: 50%;
   padding: 40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
+  transition: -webkit-transform var(--main-duration) var(--main-timing-function);
+  transition: transform var(--main-duration) var(--main-timing-function);
+  transition: transform var(--main-duration) var(--main-timing-function), -webkit-transform var(--main-duration) var(--main-timing-function);
   max-width: 450px;
   width: 100%;
   background-color: var(--modal-main-bg);
@@ -1317,17 +1324,12 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(0.1);
           transform: translate(-50%, -50%) scale(0.1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
-    -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
-    transition: -webkit-transform var(--main-duration) var(--main-timing-function);
-    transition: transform var(--main-duration) var(--main-timing-function);
-    transition: transform var(--main-duration) var(--main-timing-function), -webkit-transform var(--main-duration) var(--main-timing-function);
   }
 }
 @media screen and (max-height: 660px) {
