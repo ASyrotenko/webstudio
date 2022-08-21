@@ -979,6 +979,7 @@ img {
 }
 
 .portfolio__overflow-text {
+  height: 100%;
   padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
