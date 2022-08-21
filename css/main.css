@@ -1341,11 +1341,6 @@ img {
             transform: translate(-50%, -50%) scale(1);
   }
 }
-@media screen and (max-height: 660px) {
-  .modal {
-    top: 110%;
-  }
-}
 
 .modal__close-btn {
   position: absolute;
