@@ -102,8 +102,8 @@
 }
 
 .portfolio__overflow-text {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -153,15 +153,15 @@
   line-height: 1.88;
 }
 
-.portfolio__overflow-wrapper img {
-  width: 450px;
-  height: 294px;
+// .portfolio__overflow-wrapper img {
+//   width: 450px;
+//   height: 294px;
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    width: 370px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 370px;
+//   }
+// }
