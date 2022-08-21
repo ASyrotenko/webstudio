@@ -28,7 +28,13 @@
   &:hover,
   &:focus {
     color: var(--accent-primary-color);
-    font-size: 34px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      font-size: 34px;
+    }
   }
 
   @media screen and (min-width: 768px) {

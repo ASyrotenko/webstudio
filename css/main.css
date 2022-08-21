@@ -383,7 +383,11 @@ img {
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-primary-color);
-  font-size: 34px;
+}
+@media screen and (max-width: 767px) {
+  .contacts-list__link:hover, .contacts-list__link:focus {
+    font-size: 34px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts-list__link {
