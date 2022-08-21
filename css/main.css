@@ -1312,8 +1312,6 @@ img {
   position: relative;
   left: 50%;
   padding: 40px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   -webkit-transition: -webkit-transform var(--main-duration) var(--main-timing-function);
   transition: -webkit-transform var(--main-duration) var(--main-timing-function);
   transition: transform var(--main-duration) var(--main-timing-function);
@@ -1328,6 +1326,12 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.1);
           transform: translate(-50%, -50%) scale(0.1);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
